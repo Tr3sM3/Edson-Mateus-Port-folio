@@ -1,0 +1,296 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    
+    background: rgb(4, 0, 26);
+    color: white;
+    background-image: url('pzu5ag3p.png');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    filter: grayscale(100%);
+    transition: 2s ;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+body:hover{
+    filter: grayscale(0%);
+}
+
+
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    animation: slideMe 2s ease-in-out ;
+  }
+  nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+  }
+  .nav-content .toggle-btn,
+  .nav-content span a{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .nav-content .toggle-btn{
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-225deg);
+    transition: all 0.6s ease;
+  }
+  nav.open .toggle-btn{
+    transform: rotate(0deg);
+  }
+  .nav-content span{
+    position: absolute;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+  nav.open .nav-content span{
+    transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+    opacity: 1;
+  }
+  .nav-content span a{
+    text-decoration: none;
+    transform: rotate(45deg);
+  }
+  .nav-content span a i{
+    font-size: 24px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (360deg/ -5.8)));
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+  .nav-content span a:hover i{
+    opacity: 1;
+  }
+
+
+@keyframes slideMe{
+    0% {
+        
+        transform: skewX(0deg) translateX(850px);
+    }
+
+    100% {
+        
+        transform: skewX(0deg) ;
+    }
+}
+
+
+
+@keyframes slideMe1{
+    0% {
+        
+        transform: skewX(0deg) translateX(-790px);
+    }
+
+    100% {
+        
+        transform: skewX(0deg) ;
+    }
+}
+
+.center {
+    position:absolute;
+   }
+
+    
+.download-btn {
+    width:530px;
+    height:50px;
+    text-align:center;
+    cursor:pointer;
+    margin:30px 0px;
+    border-radius:10px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+
+.download-btn.btn-1 {
+border:5px solid #00acee;
+}
+.download-btn.btn-2 {
+border:5px solid #7b76e2;
+}
+.download-btn div {
+width:100%;
+height:100%;
+font-size:15px;
+font-weight:600;
+text-transform:uppercase;
+line-height:50px;
+}
+.download-btn.btn-1 .top {
+background:aqua;
+}
+.download-btn.btn-2 .top {
+background:#7b76e2;
+}
+
+.download-btn .bottom {
+background:#eee;
+color:#222;
+}
+.download-btn .top {
+transition:all 300ms ease-in-out;
+}
+.download-btn:hover .top {
+margin-top:-50px;
+}
+
+.slider2 {
+    
+    position: relative;
+    text-align: center;
+    width: 60%;
+    overflow: hidden;
+    margin:auto;
+    animation: slideMe1 6s ease-in-out ;
+    
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -400%;
+}
+#img6:checked ~ .m6 {
+    margin-left: -500%;
+}
+#img7:checked ~ .m7 {
+    margin-left: -300%;
+}
+#img8:checked ~ .m8 {
+    margin-left: -400%;
+}
+
+
+.slider1  {
+    position: relative;
+    text-align: center;
+    width: 60%;
+    overflow: hidden;
+    margin:auto;
+    animation: slideMe 2s ease-in-out ;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img11:checked ~ .m11 {
+    margin-left: 0;
+}
+#img22:checked ~ .m22 {
+    margin-left: -100%;
+}
+#img33:checked ~ .m33 {
+    margin-left: -300%;
+}
+#img44:checked ~ .m44 {
+    margin-left: -400%;
+}
+
+.slider3  {
+    position: relative;
+    text-align: center;
+    width: 60%;
+    overflow: hidden;
+    margin:auto;
+    animation: slideMe 12s ease-in-out ;
+    
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img111:checked ~ .m11 {
+    margin-left: 0;
+}
+#img222:checked ~ .m222 {
+    margin-left: -100%;
+}
+#img333:checked ~ .m333 {
+    margin-left: -200%;
+}
+#img444:checked ~ .m444 {
+    margin-left: -400%;
+}

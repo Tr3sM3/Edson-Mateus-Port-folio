@@ -1,0 +1,368 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    
+    background: black;
+    color: white;
+    background-image: url('pzu5ag3p.png');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    filter: grayscale(100%);
+    transition: 2s ;
+    overflow: auto;
+   
+}
+
+body:hover{
+    filter: grayscale(0%);
+}
+
+.main {
+
+    display: flex;
+	flex-flow: row wrap;
+    text-align:  center;
+	
+   
+}
+
+.main >*{
+
+    padding: 10px;
+	margin: 10px;
+	flex: 1 25%;
+	border-radius: 10px;
+   
+
+}
+
+.anih4{
+
+    animation: slideMe 4s ease-in ;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+
+
+}
+
+.lingua {
+
+    animation: slideMe 4s ease-in-out ;
+
+
+}
+
+.title {
+
+ 
+    font-size: 30px;
+    position: relative;
+    color: aqua;
+    
+   
+}
+
+.propic {
+    animation: slideMe1 4s ease-in-out ;
+}
+
+
+.propic img {
+
+    border-radius: 50%;
+    height: 360px;
+    width: auto;
+    animation: slideMe1 4s ease-in-out;
+    
+
+}
+
+
+
+
+.intro {
+
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.068);
+    width: auto;
+}
+
+.work1 {
+  
+    background: rgba(0, 238, 255, 0.151);
+    width: 600px;
+    height: auto;
+    position: relative;
+    right: -330px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    border-radius: 50px;
+    color: white;
+}
+
+#goingto {
+  width: auto;
+  height: 150px;
+}
+
+#li {
+  font-size: 18px;
+  color: red;
+}
+
+#welcome {
+    padding: 20px;
+    color: aqua;
+    animation: slideMe 2s ease-in-out ;
+}
+
+.welcome img{
+  width: auto;
+  height: 70px;
+}
+
+.lingua h1 {
+    padding: 20px;
+    color: aqua;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    animation: slideMe 2s ease-in-out ;
+  }
+  nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+  }
+  .nav-content .toggle-btn,
+  .nav-content span a{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .nav-content .toggle-btn{
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-225deg);
+    transition: all 0.6s ease;
+  }
+  nav.open .toggle-btn{
+    transform: rotate(0deg);
+  }
+  .nav-content span{
+    position: absolute;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+  nav.open .nav-content span{
+    transform: rotate(calc(var(--i) * (360deg/ 8))) translateY(120px);
+    opacity: 1;
+  }
+  .nav-content span a{
+    text-decoration: none;
+    transform: rotate(45deg);
+  }
+  .nav-content span a i{
+    font-size: 24px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (360deg/ -6.2)));
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+  .nav-content span a:hover i{
+    opacity: 1;
+  }
+
+@media all and ( min-width: 1000px){
+	.intro {
+	 flex: 3;
+	}
+;
+	}
+
+	.intro {
+
+		order: 1;
+
+  }
+
+    @keyframes slideMe{
+        0% {
+            
+            transform: skewX(0deg) translateX(850px);
+        }
+
+        100% {
+            
+            transform: skewX(0deg) ;
+        }
+    }
+
+
+
+    @keyframes slideMe1{
+        0% {
+            
+            transform: skewX(0deg) translateX(-790px);
+        }
+
+        100% {
+            
+            transform: skewX(0deg) ;
+        }
+    }
+    .center {
+        position:absolute;
+       }
+
+        
+    .download-btn {
+        width:530px;
+        height:50px;
+        text-align:center;
+        cursor:pointer;
+        margin:30px 0px;
+        border-radius:10px;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+
+    
+.download-btn.btn-1 {
+    border:5px solid #00acee;
+  }
+  .download-btn.btn-2 {
+    border:5px solid #7b76e2;
+  }
+  .download-btn div {
+    width:100%;
+    height:100%;
+    font-size: 20px;
+    font-weight:600;
+    text-transform:uppercase;
+    line-height:50px;
+  }
+  .download-btn.btn-1 .top {
+    background:aqua;
+  }
+  .download-btn.btn-2 .top {
+    background:#7b76e2;
+  }
+  
+  .download-btn .bottom {
+    background:#eee;
+    color:#222;
+  }
+  .download-btn .top {
+    transition:all 300ms ease-in-out;
+  }
+  .download-btn:hover .top {
+    margin-top:-50px;
+  }
+
+  .container{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 7s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.css{
+    width: 89%;
+    animation-delay: 4s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 3s;
+}
+.skill-per.nodejs{
+    width: 30%;
+    animation-delay: 5s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+}
