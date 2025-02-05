@@ -71,6 +71,8 @@ body:hover{
 
 .propic {
     animation: slideMe1 4s ease-in-out ;
+	 width: auto;
+  height: 800px;
 }
 
 
@@ -244,7 +246,7 @@ nav{
 
         
     .download-btn {
-        width:530px;
+        width:auto;
         height:50px;
         text-align:center;
         cursor:pointer;
