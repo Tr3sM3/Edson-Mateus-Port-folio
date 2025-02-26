@@ -10,7 +10,7 @@ body{
     
     background: black;
     color: white;
-    background-image: url('pzu5ag3p.png');
+    background-image: url('fundo.jpeg');
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -71,7 +71,7 @@ body:hover{
 
 .propic {
     animation: slideMe1 4s ease-in-out ;
-	 width: auto;
+  width: auto;
   height: 800px;
 }
 
@@ -97,20 +97,14 @@ body:hover{
     width: auto;
 }
 
-.work1 {
+.work {
   
-    background: rgba(0, 238, 255, 0.151);
-    width: 600px;
-    height: auto;
-    position: relative;
-    right: -330px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    font-size: 18px;
-    border-radius: 50px;
+    background: rgba(0, 238, 255, 0.041);
+    padding: 30px;
+    border-radius: 30px;
     color: white;
 }
+
 
 #goingto {
   width: auto;
@@ -119,13 +113,25 @@ body:hover{
 
 #li {
   font-size: 18px;
-  color: red;
+  color: rgb(0, 255, 221);
+}
+
+#h1 {
+  color:  rgb(25, 0, 255);
+}
+
+
+#h2 {
+  color: rgb(0, 255, 221);
 }
 
 #welcome {
     padding: 20px;
     color: aqua;
     animation: slideMe 2s ease-in-out ;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 
 .welcome img{
@@ -202,17 +208,22 @@ nav{
     opacity: 1;
   }
 
-@media all and ( min-width: 1000px){
-	.intro {
+@media only screen and ( max-width: 1000px){
+	.main {
 	 flex: 3;
 	}
-;
+
+
 	}
 
 	.intro {
 
 		order: 1;
 
+  }
+
+  .work {
+    order: 1;
   }
 
     @keyframes slideMe{
@@ -246,7 +257,7 @@ nav{
 
         
     .download-btn {
-        width:auto;
+        width: 340px;
         height:50px;
         text-align:center;
         cursor:pointer;

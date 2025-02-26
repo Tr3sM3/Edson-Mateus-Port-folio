@@ -8,7 +8,7 @@
 
 body{
 
-	background: url('pzu5ag3p.png');
+	background: url('fundo.jpeg');
 	color: white;
 	display: flex;
 	height: 100yh;
@@ -151,9 +151,12 @@ filter: drop-shadow(0 0 25px aqua);
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .button input[type="button"]:hover{
   background: #5029bc;
 }
+
+
 @media (max-width: 950px) {
   .container{
     width: 90%;
